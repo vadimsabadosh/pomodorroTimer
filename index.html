@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="img/bg.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/style.css">
+    <script src="js/index.js" defer ></script>
+</head>
+<body>
+    <section class="main">
+        <div class="audio-wrap">
+            <div class="audio" id='Forest'>Forest</div>
+            <div class="audio" id='Rain'>Rain</div>
+            <div class="audio" id='Ocean'>Ocean</div>
+        </div>
+        <div class="timer-wrap">
+            <div class="timer-body">
+                <div class="timer-title">Ready?</div>
+                <div class="countdown">
+                    <div class="minutes">30</div>
+                    <div class="seconds">00</div>
+                </div>
+                <div class="buttons reset">
+                    <div class="start"><span class="icon-play"></span>Start</div>
+                    <div class="pause"><span class="icon-pause-dbl"></span>Pause</div>
+                    <div class="reset"><span class="icon-reset"></span>Reset</div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="session">
+                    <i id="incrSession" class="icon-up"></i>
+                    <span class="option-title">Session</span>
+                    <input id="sessionInput" type="number" value="30" max="60" min="5">
+                    <i id="decrSession" class="icon-down"></i>
+                  </div>
+                  <div class="break">
+                    <i id="incrBreak" class="icon-up"></i>
+                    <span class="option-title">Break</span>
+                    <input id="breakInput" type="number" value="5" max="10" min="1">
+                    <i id="decrBreak" class="icon-down"></i>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <audio loop  src="audio/rain.mp3" volume="1"></audio>
+</body>
+</html>
